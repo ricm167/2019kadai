@@ -4,23 +4,23 @@
   button{
       font-size: 50 px ;
   } 
- </style>
+</style>
 </head>
 <body>
-  <button id = "button" > おみくじをひく</button>
+  <button id = "button">おみくじを引き</button>
   <script>
-  const button = document.getElementById('button')
-  button.addEventListener('click', () => {
+    const button = document.getElementById('button')
+    button.addEventListener('click', () => {
       const num = Math.random()
-      if(num<0.3){
+      if(num< 0.3){
           alert('凶です')
-      }else if(num<0.4){
+      }else if(num< 0.4){
           alert('末吉です')
-      }else if(num<0.6)
+      }else if(num< 0.6)
           alert('中吉です')
-      }else if(num<0.8)
+      }else if(num< 0.8)
           alert('吉です')
-      }else if(num<0.95)
+      }else if(num< 0.95)
           alert('大吉です')
       }else{
           alert('大凶です')
